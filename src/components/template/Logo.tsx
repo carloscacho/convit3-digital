@@ -7,7 +7,7 @@ const font = Righteous({
   weight: "400",
 });
 
-export default function Logo() {
+export default function Logo({ size }) {
   return (
     <Link
       href="/"
@@ -16,10 +16,16 @@ export default function Logo() {
     ${font.className}
     `}
     >
-      <Image src="/logo.svg" alt="Logo" width={50} height={50} />
-      <h1 className="flex flex-col items-center text-lg leading-5">
+      <Image src="/logo.svg" alt="Logo" width={size} height={size} />
+      <h1
+        className={
+          size == "100"
+            ? "text-5xl leading-10"
+            : "text-lg flex flex-col items-center leading-5"
+        }
+      >
         <div>
-          CONVIT<span className="text-blue-500">E</span>
+          CONVIT<span className="text-blue-500">3</span>
         </div>
         <div>DIGITAL</div>
       </h1>

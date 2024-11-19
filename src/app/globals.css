@@ -20,12 +20,50 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.bgAll {
-  background-image: url("/background.png");
+.bgImgInicio {
+  background-image: url("/background-inicio.svg");
 }
 
 @layer components {
   .container {
     @apply mx-auto max-w-7xl px-4;
+  }
+
+  .botao {
+    @apply flex justify-center items-center;
+    @apply gap-2 rounded-md px-9 h-9;
+    @apply text-sm font-semibold;
+  }
+
+  .botao.primary {
+    @apply bg-blue-400 text-white;
+  }
+
+  .botao.primary:hover {
+    @apply bg-blue-500;
+  }
+
+  .botao.negative {
+    @apply bg-red-400 text-white;
+  }
+
+  .botao.negative:hover {
+    @apply bg-red-500;
+  }
+
+  .botao.positive {
+    @apply bg-green-400 text-white;
+  }
+
+  .botao.positive:hover {
+    @apply bg-green-500;
+  }
+
+  .botao.alert {
+    @apply bg-yellow-400 text-white;
+  }
+
+  .botao.alert:hover {
+    @apply bg-yellow-500;
   }
 }

@@ -14,7 +14,7 @@ export default function Pagina(props: PaginaProps) {
     bgAll bg-cover
     "
     >
-      <Logo />
+      <Logo size={50} />
       <main
         className={`
         flex-1 flex flex-col justify-center py-8
