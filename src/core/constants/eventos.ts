@@ -1,9 +1,8 @@
-import { Evento } from '../eventos'
-import {Id} from '../shared'
+import { Evento } from '../evento'
 
 const eventos: Evento[] = [
     {
-        id: Id.novo(),
+        id: "9amoura7p2-iekqgyarlgs-1fnanhm07px",
         alias: 'evento-fullstack',
         senha: 'senha123',
         nome: 'Evento de Desenvolvimento Fullstack',
@@ -17,7 +16,7 @@ const eventos: Evento[] = [
         publicoEsperado: 200,
         convidados: [
             {
-                id: Id.novo(),
+                id: "y7z4t8pnhwq-rlflpjjn1y-2jirep6w3dl",
                 nome: 'Alice Silva',
                 email: 'alice@example.com',
                 confirmado: true,
@@ -25,7 +24,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 1,
             },
             {
-                id: Id.novo(),
+                id: "l8wc7spdjd-vghcolvk0n-tfzkj933b1s",
                 nome: 'Carlos Pereira',
                 email: 'carlos@example.com',
                 confirmado: false,
@@ -33,7 +32,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 0,
             },
             {
-                id: Id.novo(),
+                id: "2sb41c21v9u-x4w0y4gzwrf-sndtudr4ehs",
                 nome: 'Beatriz Lima',
                 email: 'beatriz@example.com',
                 confirmado: true,
@@ -43,7 +42,7 @@ const eventos: Evento[] = [
         ],
     },
     {
-        id: Id.novo(),
+        id: "z4vhhzudatl-r9fythk7xoi-vuoyxb8p11h",
         alias: 'evento-js-avancado',
         senha: 'js2024',
         nome: 'Workshop Avançado de JavaScript',
@@ -56,7 +55,7 @@ const eventos: Evento[] = [
         publicoEsperado: 100,
         convidados: [
             {
-                id: Id.novo(),
+                id: "6mr81i7ksyt-5tucq4qul4w-644ae0yu7nh",
                 nome: 'Eduardo Santos',
                 email: 'eduardo@example.com',
                 confirmado: true,
@@ -64,7 +63,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 0,
             },
             {
-                id: Id.novo(),
+                id: "qa0ewti8xg-wgc7d709nbm-xssm5p2pgs",
                 nome: 'Fernanda Costa',
                 email: 'fernanda@example.com',
                 confirmado: true,
@@ -74,7 +73,7 @@ const eventos: Evento[] = [
         ],
     },
     {
-        id: Id.novo(),
+        id: "nvtv3l7u3oi-9ppppki7dv-i2imyqv57sm",
         alias: 'evento-dev-frontend',
         senha: 'front123',
         nome: 'Bootcamp de Desenvolvimento Frontend',
@@ -87,7 +86,7 @@ const eventos: Evento[] = [
         publicoEsperado: 150,
         convidados: [
             {
-                id: Id.novo(),
+                id: "ox6r03gct5-lbghuvhmf4q-fzbxn9qhans",
                 nome: 'Gabriela Rocha',
                 email: 'gabriela@example.com',
                 confirmado: true,
@@ -95,7 +94,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 1,
             },
             {
-                id: Id.novo(),
+                id: "p7mc0e48lra-er3mr2ncvtk-2pv1ekt38pj",
                 nome: 'Hugo Nogueira',
                 email: 'hugo@example.com',
                 confirmado: false,
@@ -103,7 +102,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 0,
             },
             {
-                id: Id.novo(),
+                id: "gt9yh1v56oh-vg4jdhgo1r-z57nv0fggzg",
                 nome: 'Isabela Martins',
                 email: 'isabela@example.com',
                 confirmado: true,
@@ -113,7 +112,7 @@ const eventos: Evento[] = [
         ],
     },
     {
-        id: Id.novo(),
+        id: "0bpqbf4oye0g-tafuq7oiseo-83ce90f67vm",
         alias: 'casamento-alberto-marina',
         senha: 'casamento2024',
         nome: 'Casamento do Alberto e Marina',
@@ -127,7 +126,7 @@ const eventos: Evento[] = [
         publicoEsperado: 150,
         convidados: [
             {
-                id: Id.novo(),
+                id: "cq4svyf89l4-89jd0cop4w-t44mm71ij5k",
                 nome: 'Bruno Cardoso',
                 email: 'bruno@example.com',
                 confirmado: true,
@@ -135,7 +134,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 1,
             },
             {
-                id: Id.novo(),
+                id: "lepe4nrjdr-brhwg7xwc5o-2ouf3wjp9sn",
                 nome: 'Carla Mendes',
                 email: 'carla@example.com',
                 confirmado: true,
@@ -145,7 +144,7 @@ const eventos: Evento[] = [
         ],
     },
     {
-        id: Id.novo(),
+        id: "yya72err3o-i34ew7f9pi-t35remn7qjg",
         alias: 'aniversario-joao',
         senha: 'joao2024',
         nome: 'Aniversário do João - 30 Anos',
@@ -159,7 +158,7 @@ const eventos: Evento[] = [
         publicoEsperado: 80,
         convidados: [
             {
-                id: Id.novo(),
+                id: "pn510ika57m-uds8v0sqavd-vbno2f0bm1",
                 nome: 'Maria Souza',
                 email: 'maria@example.com',
                 confirmado: true,
@@ -167,7 +166,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 2,
             },
             {
-                id: Id.novo(),
+                id: "z2bjzf6bqsj-t3lsebor2-bu3jx28oijd",
                 nome: 'José Almeida',
                 email: 'jose@example.com',
                 confirmado: false,
@@ -177,7 +176,7 @@ const eventos: Evento[] = [
         ],
     },
     {
-        id: Id.novo(),
+        id: "ynbxa1zabne-pi4gpuufaep-d4dcp9i4h8t",
         alias: 'inauguracao-loja-estrela',
         senha: 'estrela2024',
         nome: 'Inauguração da Loja Estrela',
@@ -191,7 +190,7 @@ const eventos: Evento[] = [
         publicoEsperado: 300,
         convidados: [
             {
-                id: Id.novo(),
+                id: "zzmfxf8tv2j-yl9krcta89o-3rkgks3tedm",
                 nome: 'Cláudia Lima',
                 email: 'claudia@example.com',
                 confirmado: true,
@@ -199,7 +198,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 3,
             },
             {
-                id: Id.novo(),
+                id: "ltn63e43t6p-16usxl712tv-km5htruyxcn",
                 nome: 'Ricardo Barbosa',
                 email: 'ricardo@example.com',
                 confirmado: true,
@@ -209,7 +208,7 @@ const eventos: Evento[] = [
         ],
     },
     {
-        id: Id.novo(),
+        id: "5hft9it9yii-055u2ss5of2l-vpsr5lkjgdn",
         alias: 'reuniao-familia-oliveira',
         senha: 'familia2024',
         nome: 'Reunião da Família Oliveira',
@@ -222,7 +221,7 @@ const eventos: Evento[] = [
         publicoEsperado: 50,
         convidados: [
             {
-                id: Id.novo(),
+                id: "io4x4s001n-wjuwefyil9m-k4zuqclmd3k",
                 nome: 'Thiago Oliveira',
                 email: 'thiago@example.com',
                 confirmado: true,
@@ -230,7 +229,7 @@ const eventos: Evento[] = [
                 qtdeAcompanhantes: 4,
             },
             {
-                id: Id.novo(),
+                id: "49w6a268nj4-yny1bu7v0zo-79bg5b2et8w",
                 nome: 'Letícia Oliveira',
                 email: 'leticia@example.com',
                 confirmado: true,
