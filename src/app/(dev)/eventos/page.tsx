@@ -1,3 +1,4 @@
+  import QRCodeView from "@/components/QRCodeView";
 import { eventos } from "@/core";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import QRCode from "react-qr-code";
 export default function PaginaEventos() {
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 ">
-      {eventos.map((evento) => (
+      {eventos.map((evento, index) => (
         <div
           key={evento.id}
           className="
@@ -27,10 +28,7 @@ export default function PaginaEventos() {
             <span className="text-sm flex-1 text-zinc-400 text-center">
               {evento.descricao}
             </span>
-            <QRCode
-              value={JSON.stringify({ id: evento.id, senha: evento.senha })}
-              className="w-44 h-44"
-            />
+            <QRCodeView evento={evento} index={index} />
             <div className=" flex-1 flex gap-5">
               <Link
                 className="flex-1 botao negative"
