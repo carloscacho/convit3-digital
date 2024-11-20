@@ -26,5 +26,3 @@ export default class Data {
   }
 }
 
-const dataForm = Data.formatar(new Date());
-console.log(Data.desformatar(dataForm));

@@ -54,7 +54,5 @@ const validarEvento = (evento: Partial<Evento>): string[] => {
   return erros;
 };
 
-console.log(criarEventoVazio());
-
 
 export {validarEvento, complementarEvento, criarEventoVazio}

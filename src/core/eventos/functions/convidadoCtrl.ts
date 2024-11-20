@@ -40,7 +40,6 @@ const validarConvidado = (convidado: Partial<Convidado>): string[] => {
   return erros;
 };
 
-console.log(criarConvidadoVazio());
 
 
 export {validarConvidado, complementarConvidado, criarConvidadoVazio}

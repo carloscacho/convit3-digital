@@ -17,5 +17,3 @@ export default class Senha {
     return senha.join("")
   }
 }
-
-console.log(Senha.nova(18))
