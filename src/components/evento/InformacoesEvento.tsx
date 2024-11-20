@@ -10,9 +10,9 @@ export interface InformacoesEventoProps {
 export default function InformacoesEvento(props: InformacoesEventoProps) {
   return (
     <div className={`flex flex-col mb-2 gap-2 ${props.className ?? ""}`}>
-      <div className="flex-1 flex items-center gap-4 border-zinc-800 px-6 py-2 rounded">
-        <span className="text-2xl font-black">{props.evento.alias}</span>
-        <span className="text-xl text-zinc-300">{props.evento.nome}</span>
+      <div className="flex-1 flex items-center gap-4 border border-zinc-600 px-6 py-2">
+        <span className="text-2xl font-black">{props.evento.nome}</span>
+        <span className="text-xl text-zinc-300">{props.evento.alias}</span>
       </div>
       <div className="flex gap-2">
         <Informacao label="Data: ">
