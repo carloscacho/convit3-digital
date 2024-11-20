@@ -3,6 +3,7 @@ import React from "react";
 import InformacoesEvento from "./InformacoesEvento";
 import AcessarViaQrCode from "./AcessarViaQrCode";
 import Estatistica from "../shared/Estatistica";
+import ListaConvidados from "./ListaConvidados";
 
 export interface DashboardEventoProps {
   evento: Evento;
@@ -34,6 +35,21 @@ export default function DashboardEvento(props: DashboardEventoProps) {
           valor={props.totalPessoas}
           imagem="/icones/acompanhantes.svg"
         />
+      </div>
+      <div className="flex flex-1 flex-col mt-12">
+        <button className="botao primary  self-end">
+          <span>Atualizar Lista de Convidados</span>
+        </button>
+        <span className="flex py-2 text-xl font-bold text-white/80">
+          Convidados que Confirmaram PRESENÇA
+        </span>
+        <ListaConvidados convidados={props.confirmados} />
+      </div>
+      <div>
+        <span className="flex py-2 text-xl font-bold text-white/80">
+          Convidados que NÃO Confirmaram PRESENÇA
+        </span>
+        <ListaConvidados convidados={props.ausentes} />
       </div>
     </div>
   );

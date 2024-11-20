@@ -24,6 +24,10 @@ body {
   background-image: url("/background-inicio.svg");
 }
 
+.bgAll {
+  background-image: url("/background.png");
+}
+
 @layer components {
   .container {
     @apply mx-auto max-w-7xl px-4;

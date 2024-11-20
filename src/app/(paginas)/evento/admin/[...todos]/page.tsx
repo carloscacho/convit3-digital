@@ -12,15 +12,13 @@ export default function PaginaAdminEvento(props: any) {
   const [senha, setSenha] = useState<string | null>(params.todos[1] ?? null);
   const [evento, setEvento] = useState<Evento | null>(null);
 
-  const confimardos = evento?.convidados.filter((c) => c.confirmado) ?? [];
-  const ausentes = evento?.convidados.filter((c) => !c.confirmado).length ?? 0;
+  const confirmados = evento?.convidados.filter((c) => c.confirmado) ?? [];
+  const ausentes = evento?.convidados.filter((c) => !c.confirmado) ?? [];
 
-  const totalPessoas = evento?.convidados.reduce(
-    (total: number, convidado: Convidado) => {
+  const totalPessoas =
+  confirmados?.reduce((total: number, convidado: Convidado) => {
       return total + convidado.qtdeAcompanhantes + 1;
-    },
-    0
-  );
+    }, 0) ?? 0;
 
   function carregarEvento() {
     const e = eventos.find((ev) => ev.id === id && ev.senha === senha);
@@ -33,7 +31,16 @@ export default function PaginaAdminEvento(props: any) {
 
   return (
     <div className="flex flex-col items-center">
-      {evento ? <DashboardEvento totalPessoas={totalPessoas} ausentes={ausentes} confirmados={confimardos} evento={evento} /> : <FormSenhaEvento />}
+      {evento ? (
+        <DashboardEvento
+          totalPessoas={totalPessoas}
+          ausentes={ausentes}
+          confirmados={confirmados}
+          evento={evento}
+        />
+      ) : (
+        <FormSenhaEvento />
+      )}
     </div>
   );
 }
