@@ -23,9 +23,9 @@ export default function PaginaEventos() {
               className="object-cover"
             />
           </div>
-          <div className="flex flex-col flex-1 p-7 gap-5 items-center">
+          <div className="flex flex-col flex-1 p-7 gap-5 items-center text-center">
             <span className="text-lg font-black">{evento.nome}</span>
-            <span className="text-sm flex-1 text-zinc-400 text-center">
+            <span className="text-sm flex-1 text-zinc-400 ">
               {evento.descricao}
             </span>
             <QRCodeView evento={evento} index={index} />
