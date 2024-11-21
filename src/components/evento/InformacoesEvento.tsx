@@ -1,4 +1,4 @@
-import { Evento, eventos } from "@/core";
+import { Evento, eventos } from "core";
 import React from "react";
 import Informacao from "../shared/Informacao";
 

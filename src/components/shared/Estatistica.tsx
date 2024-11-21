@@ -1,4 +1,4 @@
-import { Evento } from "@/core";
+import { Evento } from "core";
 import Image from "next/image";
 import React from "react";
 

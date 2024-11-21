@@ -1,5 +1,5 @@
 "use client";
-import { Evento } from "@/core";
+import { Evento } from "core";
 import React from "react";
 import QRCode from "react-qr-code";
 

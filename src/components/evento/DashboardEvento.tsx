@@ -1,4 +1,4 @@
-import { Convidado, Evento } from "@/core";
+import { Convidado, Evento } from "core";
 import React from "react";
 import InformacoesEvento from "./InformacoesEvento";
 import AcessarViaQrCode from "./AcessarViaQrCode";

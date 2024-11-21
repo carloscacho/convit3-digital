@@ -1,9 +1,8 @@
-  import QRCodeView from "@/components/QRCodeView";
-import { eventos } from "@/core";
+import QRCodeView from "@/components/QRCodeView";
+import { eventos } from "core";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import QRCode from "react-qr-code";
 
 export default function PaginaEventos() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 import DashboardEvento from "@/components/evento/DashboardEvento";
 import FormSenhaEvento from "@/components/evento/FormSenhaEvento";
-import { Convidado, Evento, eventos } from "@/core";
+import { Convidado, Evento, eventos } from "core";
 import { use, useEffect, useState } from "react";
 
 export default function PaginaAdminEvento(props: any) {
@@ -16,7 +16,7 @@ export default function PaginaAdminEvento(props: any) {
   const ausentes = evento?.convidados.filter((c) => !c.confirmado) ?? [];
 
   const totalPessoas =
-  confirmados?.reduce((total: number, convidado: Convidado) => {
+    confirmados?.reduce((total: number, convidado: Convidado) => {
       return total + convidado.qtdeAcompanhantes + 1;
     }, 0) ?? 0;
 

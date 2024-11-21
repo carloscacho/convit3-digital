@@ -1,4 +1,4 @@
-import { Convidado } from "@/core";
+import { Convidado } from "core";
 import React from "react";
 
 export interface ConvidadoItemProps {

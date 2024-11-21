@@ -1,4 +1,4 @@
-import { Convidado } from "@/core";
+import { Convidado } from "core";
 import React from "react";
 import ConvidadoItem from "./ConvidadoItem";
 export interface ListaConvidadosProps {
@@ -10,10 +10,9 @@ export default function ListaConvidados(props: ListaConvidadosProps) {
     <div>
       <ul className="flex flex-col gap-2">
         {props.convidados.map((convidado) => (
-        <ConvidadoItem key={convidado.id} convidado={convidado} />
-      ))}
+          <ConvidadoItem key={convidado.id} convidado={convidado} />
+        ))}
       </ul>
-      
     </div>
   );
 }
